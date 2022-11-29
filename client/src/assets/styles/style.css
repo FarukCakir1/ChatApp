@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+
+    .full-height{
+        height: calc(100% - theme("spacing.16"));
+    }
+    .aa{
+        height: calc(100% - theme("spacing.20"));
+    }
+    
+    input{
+        @apply outline-brandYellow
+    }
+
+    #visible-upload-btn::-webkit-file-upload-button{
+        visibility: hidden;
+        user-select: none;
+    }
+
+    #visible-upload-btn{
+        color: white;
+        user-select: none;
+    }
+}
+
+@layer utilities{
+    .scroll::-webkit-scrollbar {
+        width: 10px;
+        height: 16px;
+      }
+    .scroll::-webkit-scrollbar-track {
+        background: #edf2f7;
+      }
+    .scroll::-webkit-scrollbar-thumb {
+       
+        background: #8424BC;
+        border-radius: 100vh;
+        border: 3px solid #edf2f7;
+         
+    }
+}
